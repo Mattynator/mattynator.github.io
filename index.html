@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Mattynator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
-    <h1>Mattynator</h1>
-    <h2>A The 1975 text formatter</h2>
-    <br><br><br>
-
-    <form action="javascript:mattynator()">
-        Enter the text: <input type="text" id="textinator" name="textinator"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <p id="output"></p>
-    
-    <br> 
-    <h2>Check out our Discord Bot!</h2>
-    <p>Source code available <a href="https://github.com/Mattynator/mattynator.github.io/tree/master/Discord%20Bot">here!</a></p>
-    
-    <script src="mattynator-main.js"></script>      <!-- We use a file to allow us to use it in different pages -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html">// M A T T Y N A T O R //<br></a>
+            <h5>by <a class="creator-head" href="https://github.com/blohshyboi">blohshyboi</a></h5>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="about-me">
+                    <p>Welcome to Mattynator, a simple text formatter, inspired by <strong>The 1975</strong>'s text style! This main purpose of this project is to serve as documentation for any programming begginner. All the source code for this site and
+                        all the different projects is available on our <a href="https://github.com/Mattynator/mattynator.github.io">GitHub</a></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <form action="javascript:mattynator()">
+                    <input type="text" placeholder="Insert Text" id="textinator" name="textinator">
+                    <button class="btn btn-primary" type="submit">Format</button>
+                    <br><br>
+                    <p id="output"></p> <!-- Here's where the output text will be placed by the JavaScript code -->
+                </form>
+            </div>
+        </section>
+        <section class="portfolio-block photography"></section>
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center content">
+                    <h3>Like what you see?</h3><a class="btn btn-outline-primary btn-lg" role="button" href="https://github.com/Mattynator/mattynator.github.io" target="_blank">Check the code</a></div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <!-- Start: portfolio heading -->
+                <div class="heading">
+                    <h2>We have more!</h2>
+                </div>
+                <!-- End: portfolio heading -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><img src="assets/img/discord.png" height="70px"></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Discord Bot</h3>
+                                <p class="card-text">We created a Discord bot using Discord.js so you can see how to start and make your own</p><a class="btn btn-primary" role="button" href="https://github.com/Mattynator/mattynator.github.io/tree/master/Discord%20Bot" target="_blank">View the code</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"></div>
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="https://github.com/blohshyboi">About me</a><a href="https://github.com/Mattynator/mattynator.github.io#contacts">Contact me</a></div>
+        </div>
+    </footer>
+    <script src="assets/js/mattynator-main.js"></script> <!-- Here I loaded the JavaScript that makes Mattynator work. All the rest are part of bootstrap which I used to make the website -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
